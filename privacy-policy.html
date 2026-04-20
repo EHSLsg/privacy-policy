@@ -5,300 +5,1018 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - SG-MY Traffic</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background-color: #f8f9fa;
+        }
+        .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f9f9f9;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        .header {
+            border-bottom: 4px solid #0a7ea4;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
         }
         h1 {
             color: #0a7ea4;
-            border-bottom: 3px solid #0a7ea4;
-            padding-bottom: 10px;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        .meta strong {
+            color: #333;
         }
         h2 {
             color: #0a7ea4;
-            margin-top: 30px;
+            font-size: 1.8em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            font-weight: 600;
         }
         h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        strong {
+            color: #0a7ea4;
+            font-weight: 600;
+        }
+        em {
+            font-style: italic;
             color: #555;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+            margin: 20px 0;
+            background-color: #f9f9f9;
         }
         table th {
-            background-color: #f0f0f0;
-            font-weight: bold;
+            background-color: #0a7ea4;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #0a7ea4;
+        }
+        table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        table tr:nth-child(even) {
+            background-color: #f0f5f7;
+        }
+        table tr:hover {
+            background-color: #e8f2f5;
+        }
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #0a7ea4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .success-box {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
         }
         code {
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             padding: 2px 6px;
             border-radius: 3px;
             font-family: 'Courier New', monospace;
+            color: #d63384;
         }
-        .contact-info {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-left: 4px solid #0a7ea4;
-            margin: 20px 0;
+        a {
+            color: #0a7ea4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
         }
-        .last-updated {
+        a:hover {
+            color: #055a7a;
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #e0e0e0;
+            margin: 40px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
             color: #666;
-            font-style: italic;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .toc {
+            background-color: #f0f5f7;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #0a7ea4;
+        }
+        .toc ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+        .toc li {
+            margin-bottom: 8px;
+        }
+        .toc a {
+            color: #0a7ea4;
+        }
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .crossmark {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+            table {
+                font-size: 0.9em;
+            }
+            table th, table td {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for SG-MY Traffic</h1>
-    
-    <p><strong>Last Updated:</strong> April 3, 2026</p>
-    <p><strong>Effective Date:</strong> April 3, 2026</p>
-    
-    <hr>
-    
-    <h2>1. Introduction</h2>
-    <p>SG-MY Traffic ("App," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Services").</p>
-    
-    <p>This Privacy Policy applies to users in Singapore, Malaysia, and other jurisdictions. We comply with:</p>
-    <ul>
-        <li>Google Play Store Privacy Requirements</li>
-        <li>Singapore Personal Data Protection Act (PDPA) 2012</li>
-        <li>Malaysia Personal Data Protection Act 2010 (PDPA)</li>
-    </ul>
-    
-    <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our Services.</p>
-    
-    <hr>
-    
-    <h2>2. Information We Collect</h2>
-    
-    <h3>2.1 Information You Provide Directly</h3>
-    
-    <h4>Location Data</h4>
-    <ul>
-        <li><strong>What we collect:</strong> Your GPS location coordinates when you use the traffic tracking features</li>
-        <li><strong>How we collect it:</strong> Through your device's GPS sensor (with your permission)</li>
-        <li><strong>Why we collect it:</strong> To calculate travel times from your current location to Malaysia Immigration checkpoints (Tuas and Woodlands routes)</li>
-        <li><strong>Your control:</strong> You can enable/disable location access in your device settings at any time</li>
-    </ul>
-    
-    <h4>Crowdsourced Traffic Data (Optional)</h4>
-    <ul>
-        <li><strong>What we collect:</strong> Your vehicle speed and timestamp (if you opt-in to crowdsourcing)</li>
-        <li><strong>How we collect it:</strong> By analyzing your GPS movement speed when you're on the tracked routes</li>
-        <li><strong>Why we collect it:</strong> To build real-time traffic heatmaps and improve travel time predictions for all users</li>
-        <li><strong>Your control:</strong> You can enable/disable crowdsourcing in the App settings. Crowdsourcing is opt-in only and completely voluntary</li>
-    </ul>
-    
-    <h4>Bluetooth Data (Optional)</h4>
-    <ul>
-        <li><strong>What we collect:</strong> Nearby Bluetooth device counts (if you opt-in to Bluetooth detection)</li>
-        <li><strong>How we collect it:</strong> By scanning for nearby Bluetooth devices when you're near the tracked routes</li>
-        <li><strong>Why we collect it:</strong> To detect traffic congestion in areas with poor GPS signal (tunnels, underground roads)</li>
-        <li><strong>Your control:</strong> You can enable/disable Bluetooth detection in the App settings. Bluetooth scanning is opt-in only</li>
-    </ul>
-    
-    <h4>Camera Feeds</h4>
-    <ul>
-        <li><strong>What we collect:</strong> We do not collect or store camera feed data</li>
-        <li><strong>How we use it:</strong> We display live camera feeds from the Land Transport Authority (LTA) Singapore for informational purposes only</li>
-        <li><strong>Your control:</strong> Camera feeds are provided by LTA and are not stored by us</li>
-    </ul>
-    
-    <h4>Device Information</h4>
-    <ul>
-        <li><strong>What we collect:</strong> Device model, OS version, app version, crash logs</li>
-        <li><strong>How we collect it:</strong> Automatically through app analytics</li>
-        <li><strong>Why we collect it:</strong> To diagnose crashes, improve app performance, and ensure compatibility</li>
-        <li><strong>Your control:</strong> You can disable analytics in your device settings</li>
-    </ul>
-    
-    <h3>2.2 Information Collected Automatically</h3>
-    
-    <h4>Usage Analytics</h4>
-    <ul>
-        <li><strong>What we collect:</strong> Which screens you view, features you use, time spent in app</li>
-        <li><strong>How we collect it:</strong> Through app analytics (Expo Analytics)</li>
-        <li><strong>Why we collect it:</strong> To understand user behavior and improve the app</li>
-        <li><strong>Your control:</strong> You can opt-out in app settings</li>
-    </ul>
-    
-    <hr>
-    
-    <h2>3. Data Anonymization & Aggregation</h2>
-    
-    <h3>3.1 How We Protect Your Privacy</h3>
-    
-    <p><strong>Crowdsourced Data Processing:</strong></p>
-    <ul>
-        <li>Your speed data is anonymized immediately upon collection</li>
-        <li>We do not collect your name, phone number, email, or any identifying information</li>
-        <li>Your data is assigned a random anonymous ID that cannot be traced back to you</li>
-        <li>Individual data points are deleted after 24-48 hours</li>
-        <li>Only aggregated statistics are retained (e.g., "average speed on Route X at Hour Y")</li>
-    </ul>
-    
-    <h3>3.2 Data Retention</h3>
-    <table>
-        <tr>
-            <th>Data Type</th>
-            <th>Retention Period</th>
-            <th>Reason</th>
-        </tr>
-        <tr>
-            <td>Crowdsourced Speed Data</td>
-            <td>24-48 hours</td>
-            <td>Real-time traffic only</td>
-        </tr>
-        <tr>
-            <td>Bluetooth Counts</td>
-            <td>24-48 hours</td>
-            <td>Real-time congestion only</td>
-        </tr>
-        <tr>
-            <td>GPS Coordinates</td>
-            <td>Real-time only</td>
-            <td>Not stored permanently</td>
-        </tr>
-        <tr>
-            <td>Aggregated Statistics</td>
-            <td>90 days</td>
-            <td>Traffic pattern analysis</td>
-        </tr>
-        <tr>
-            <td>Crash Logs</td>
-            <td>30 days</td>
-            <td>Bug fixing</td>
-        </tr>
-        <tr>
-            <td>Analytics</td>
-            <td>12 months</td>
-            <td>Usage trends</td>
-        </tr>
-        <tr>
-            <td>Device ID</td>
-            <td>Until app uninstall</td>
-            <td>App functionality</td>
-        </tr>
-    </table>
-    
-    <hr>
-    
-    <h2>4. How We Use Your Information</h2>
-    
-    <h3>4.1 Core App Functionality</h3>
-    <ul>
-        <li>Calculate travel times from your location to immigration checkpoints</li>
-        <li>Display real-time traffic conditions on the Tuas and Woodlands routes</li>
-        <li>Show live camera feeds from LTA</li>
-        <li>Display 7-day congestion forecasts and 24-hour timing trends</li>
-    </ul>
-    
-    <h3>4.2 What We Do NOT Do</h3>
-    <ul>
-        <li>❌ We do NOT sell your data to third parties</li>
-        <li>❌ We do NOT share your data with advertisers</li>
-        <li>❌ We do NOT use your data for targeted advertising</li>
-        <li>❌ We do NOT track your identity across apps</li>
-        <li>❌ We do NOT share crowdsourced data with government agencies</li>
-    </ul>
-    
-    <hr>
-    
-    <h2>5. Your Rights & Choices</h2>
-    
-    <h3>5.1 Singapore PDPA Rights</h3>
-    <p>Under the Singapore Personal Data Protection Act, you have the right to:</p>
-    <ul>
-        <li><strong>Right of Access:</strong> Request access to your personal data held by us</li>
-        <li><strong>Right of Correction:</strong> Request correction of inaccurate data</li>
-        <li><strong>Right to Opt-Out:</strong> Opt-out of marketing communications and crowdsourcing</li>
-        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for location tracking</li>
-    </ul>
-    
-    <h3>5.2 Malaysia PDPA Rights</h3>
-    <p>Under the Malaysia Personal Data Protection Act 2010, you have the right to:</p>
-    <ul>
-        <li><strong>Right of Access:</strong> Request access to your personal data</li>
-        <li><strong>Right of Correction:</strong> Request correction of inaccurate data</li>
-        <li><strong>Right to Opt-Out:</strong> Opt-out of processing for direct marketing</li>
-        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for any data processing</li>
-    </ul>
-    
-    <hr>
-    
-    <h2>6. Data Security</h2>
-    
-    <p>We implement industry-standard security measures to protect your data:</p>
-    
-    <h3>In Transit:</h3>
-    <ul>
-        <li>All data transmitted to our servers uses HTTPS encryption (TLS 1.2+)</li>
-        <li>Encrypted communication prevents interception</li>
-    </ul>
-    
-    <h3>At Rest:</h3>
-    <ul>
-        <li>Sensitive data is encrypted using AES-256 encryption</li>
-        <li>Database access is restricted to authorized personnel only</li>
-        <li>Regular security audits and penetration testing</li>
-    </ul>
-    
-    <hr>
-    
-    <h2>7. Contact Us</h2>
-    
-    <div class="contact-info">
-        <h3>For Privacy Inquiries, Data Requests, or Concerns:</h3>
-        <p><strong>Email:</strong> EHStr33tLights@gmail.com</p>
-        <p><strong>Name:</strong> Herman</p>
-        <p><strong>Address:</strong> Available upon request</p>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="meta">
+                <p><strong>SG-MY Traffic</strong></p>
+                <p><strong>Effective Date:</strong> April 19, 2026</p>
+                <p><strong>Last Updated:</strong> April 19, 2026</p>
+                <p><strong>Version:</strong> 2.0</p>
+            </div>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>SG-MY Traffic</strong> (the "<strong>App</strong>"), a mobile application designed to provide real-time traffic information, congestion monitoring, and route planning for travelers between Singapore and Malaysia. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App and related services.</p>
+        
+        <p>This Privacy Policy applies to users in Singapore, Malaysia, and other jurisdictions. We comply with:</p>
+        <ul>
+            <li><strong>Google Play Store Privacy Requirements</strong></li>
+            <li><strong>Singapore Personal Data Protection Act (PDPA) 2012</strong></li>
+            <li><strong>Malaysia Personal Data Protection Act 2010 (PDPA)</strong></li>
+            <li><strong>Apple App Store Guidelines</strong></li>
+        </ul>
+        
+        <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our App. By accessing and using SG-MY Traffic, you acknowledge that you have read and understood this Privacy Policy.</p>
+
+        <hr>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Location Information</h3>
+
+        <h4>GPS Location Data (Precise Location)</h4>
+        <p>When you enable location services, the App collects your precise GPS coordinates to:</p>
+        <ul>
+            <li>Determine your current location and route status</li>
+            <li>Detect when you are on or near the Tuas Second Link or Woodlands Causeway routes (within 2 kilometers)</li>
+            <li>Activate location-based Bluetooth scanning when you are on supported routes</li>
+            <li>Display your current position on the map</li>
+            <li>Provide accurate route-specific traffic information</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Key Points:</strong>
+            <ul>
+                <li>Location data is processed <strong>locally on your device</strong> for geofence detection</li>
+                <li>GPS coordinates are <strong>not stored permanently</strong> on our servers</li>
+                <li>Location data is used <strong>only for route detection</strong> and is not shared with third parties</li>
+                <li>You can disable location services at any time in your device settings</li>
+            </ul>
+        </div>
+
+        <h4>Coarse Location (Approximate Location)</h4>
+        <p>On Android devices, we may collect coarse location information (approximate location based on cell towers and WiFi networks) as a fallback when precise GPS is unavailable. This helps us estimate your location when GPS signal is weak.</p>
+
+        <h3>2.2 Bluetooth Device Data</h3>
+
+        <h4>Nearby Device Detection (Bluetooth Low Energy Scanning)</h4>
+        <p>When you enable Bluetooth scanning in the App settings, the App scans for nearby Bluetooth devices (phones, vehicles, IoT devices, wearables) to estimate traffic congestion based on device density. Specifically, we collect:</p>
+
+        <ul>
+            <li><strong>Number of nearby Bluetooth devices detected</strong> (e.g., 15 devices)</li>
+            <li><strong>Received Signal Strength Indicator (RSSI) values</strong> to estimate distance from your device</li>
+            <li><strong>Aggregated device density</strong> at each checkpoint (Tuas and Woodlands)</li>
+            <li><strong>Timestamp</strong> of when the scan occurred</li>
+            <li><strong>Checkpoint location</strong> (Tuas or Woodlands only)</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>What We Do NOT Collect:</strong>
+            <ul>
+                <li><span class="crossmark">✗</span> Device names or Bluetooth identifiers</li>
+                <li><span class="crossmark">✗</span> Personal information from nearby devices</li>
+                <li><span class="crossmark">✗</span> MAC addresses or other unique device identifiers</li>
+                <li><span class="crossmark">✗</span> Any data that could identify individuals</li>
+                <li><span class="crossmark">✗</span> Information about specific devices or their owners</li>
+            </ul>
+        </div>
+
+        <h4>Geofence-Based Activation</h4>
+        <p>The Bluetooth scanning operates on a <strong>geofence-based system</strong> to minimize battery drain and ensure data collection is relevant:</p>
+        <ul>
+            <li>Scanning <strong>automatically activates</strong> when you are within 2 kilometers of Tuas or Woodlands checkpoints</li>
+            <li>Scanning <strong>automatically stops</strong> when you leave these areas</li>
+            <li>You can manually enable/disable Bluetooth scanning in Settings at any time</li>
+            <li>Scanning only occurs when the App is in the foreground or minimized (not when completely closed)</li>
+        </ul>
+
+        <h3>2.3 Traffic and Route Data</h3>
+
+        <h4>Route Information</h4>
+        <p>We collect information about the routes you view and interact with, including:</p>
+        <ul>
+            <li>Which routes you select (Tuas Second Link, Woodlands Causeway)</li>
+            <li>Direction of travel (Singapore to Malaysia or vice versa)</li>
+            <li>Time and frequency of your route queries</li>
+            <li>Duration of time spent viewing traffic information</li>
+            <li>Route details you view (cameras, forecasts, trends)</li>
+        </ul>
+
+        <h4>Traffic Duration</h4>
+        <p>We receive real-time traffic duration data from Google Maps Routes API, which includes:</p>
+        <ul>
+            <li>Estimated travel time with current traffic conditions</li>
+            <li>Static travel time without traffic</li>
+            <li>Distance of the route</li>
+            <li>Traffic status (Light, Moderate, Heavy)</li>
+            <li>Route geometry and waypoints</li>
+        </ul>
+
+        <p>This data is <strong>aggregated and does not identify you personally</strong>.</p>
+
+        <h3>2.4 Saved Locations and Preferences</h3>
+
+        <h4>Destinations and Favorites</h4>
+        <p>If you use the Destinations feature to save favorite locations or routes, we store:</p>
+        <ul>
+            <li>Home location (optional)</li>
+            <li>Work location (optional)</li>
+            <li>Custom saved locations</li>
+            <li>Favorite routes</li>
+            <li>Location names and addresses</li>
+        </ul>
+
+        <div class="success-box">
+            <strong>Storage Method:</strong>
+            <ul>
+                <li>This data is stored <strong>locally on your device</strong> using encrypted local storage (AsyncStorage)</li>
+                <li>We do <strong>not transmit</strong> this data to our servers unless you explicitly opt-in to cloud synchronization features</li>
+                <li>This data is <strong>not shared</strong> with third parties</li>
+            </ul>
+        </div>
+
+        <h3>2.5 Camera Feed Data</h3>
+
+        <h4>Live Traffic Cameras</h4>
+        <p>The App displays live traffic camera feeds from the Land Transport Authority (LTA) of Singapore. We collect:</p>
+        <ul>
+            <li>Which camera feeds you view</li>
+            <li>Duration of viewing each camera</li>
+            <li>Frequency of camera access</li>
+            <li>Camera IDs accessed</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Important:</strong>
+            <ul>
+                <li>Camera feed <strong>images are not stored</strong> by us</li>
+                <li>Camera images are provided by LTA and are displayed in real-time only</li>
+                <li>We only log your <strong>interaction</strong> with these feeds for analytics purposes</li>
+                <li>Camera data is not shared with third parties</li>
+            </ul>
+        </div>
+
+        <h3>2.6 Subscription and Payment Information</h3>
+
+        <h4>In-App Purchases and Subscriptions</h4>
+        <p>If you subscribe to remove ads (SGD $2.99/month or MYR 7.99/month), we collect:</p>
+        <ul>
+            <li>Subscription status (active, cancelled, expired)</li>
+            <li>Subscription start and renewal dates</li>
+            <li>Subscription duration</li>
+            <li>Subscription history</li>
+            <li>Payment method type (credit card, debit card, etc.)</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>Payment Processing:</strong>
+            <ul>
+                <li><strong>Important:</strong> We do <strong>not directly handle</strong> payment information</li>
+                <li>All payments are processed securely by <strong>Google Play Store</strong> or <strong>Apple App Store</strong> according to their respective privacy policies</li>
+                <li>We only receive <strong>confirmation</strong> of your subscription status from the app stores</li>
+                <li>Payment card details are <strong>never transmitted</strong> to our servers</li>
+            </ul>
+        </div>
+
+        <h3>2.7 App Usage and Analytics</h3>
+
+        <h4>Usage Statistics</h4>
+        <p>We collect non-personally identifiable information about how you use the App, including:</p>
+        <ul>
+            <li>App launch frequency and duration</li>
+            <li>Features accessed and time spent in each feature</li>
+            <li>Errors and crashes</li>
+            <li>Device type and operating system version</li>
+            <li>App version</li>
+            <li>Approximate location (country/region level only, not precise)</li>
+            <li>Screen views and navigation patterns</li>
+        </ul>
+
+        <p><strong>Purpose:</strong></p>
+        <ul>
+            <li>Improve the App's performance and user experience</li>
+            <li>Identify and fix bugs</li>
+            <li>Understand feature usage patterns</li>
+            <li>Optimize app performance</li>
+        </ul>
+
+        <h3>2.8 Device Information</h3>
+
+        <h4>Device Identifiers</h4>
+        <p>We may collect:</p>
+        <ul>
+            <li>Device model and manufacturer</li>
+            <li>Operating system version</li>
+            <li>Unique device identifier (IDFA on iOS, Advertising ID on Android)</li>
+            <li>Device language and timezone</li>
+            <li>Device storage capacity</li>
+            <li>Device RAM</li>
+        </ul>
+
+        <h3>2.9 User Preferences and Settings</h3>
+
+        <h4>Settings and Preferences</h4>
+        <p>We store your preferences locally on your device, including:</p>
+        <ul>
+            <li>Bluetooth scanning enabled/disabled status</li>
+            <li>Auto-refresh enabled/disabled status</li>
+            <li>Refresh interval preference (30 seconds to 5 minutes)</li>
+            <li>Dark mode preference</li>
+            <li>Theme preference</li>
+            <li>Privacy preferences</li>
+        </ul>
+
+        <div class="success-box">
+            <strong>Storage Method:</strong>
+            <ul>
+                <li>All preferences are stored <strong>locally on your device</strong> using encrypted local storage</li>
+                <li>Preferences are <strong>not transmitted</strong> to our servers</li>
+                <li>Preferences persist even after closing the app</li>
+            </ul>
+        </div>
+
+        <h3>2.10 Crowdsourced Traffic Data (Optional)</h3>
+
+        <h4>Aggregated Congestion Data</h4>
+        <p>When you enable Bluetooth scanning, we collect and aggregate device density data to provide crowd-sourced congestion estimates. This includes:</p>
+        <ul>
+            <li>Device count at each checkpoint</li>
+            <li>Timestamp of the data point</li>
+            <li>Checkpoint location</li>
+            <li>Aggregated congestion level (Light, Moderate, Heavy)</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Important:</strong>
+            <ul>
+                <li>This data is <strong>anonymized</strong> and cannot identify you</li>
+                <li>Individual data points are <strong>deleted after 24-48 hours</strong></li>
+                <li>Only <strong>aggregated statistics</strong> are retained long-term</li>
+                <li>This data is used <strong>only for traffic analysis</strong> and is not shared with third parties</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>3. How We Use Your Information</h2>
+
+        <h3>3.1 Primary Uses</h3>
+
+        <p>We use the information collected to:</p>
+        <ol>
+            <li><strong>Provide Real-Time Traffic Information:</strong> Display current traffic conditions, congestion levels, and estimated travel times for your selected routes</li>
+            <li><strong>Improve Congestion Detection:</strong> Combine Google Maps traffic data with Bluetooth device density to provide more accurate congestion estimates</li>
+            <li><strong>Enable Location-Based Features:</strong> Automatically activate Bluetooth scanning when you are on or near supported routes</li>
+            <li><strong>Personalize Your Experience:</strong> Remember your preferences, saved locations, and favorite routes</li>
+            <li><strong>Provide Live Camera Feeds:</strong> Display current traffic camera views from LTA</li>
+            <li><strong>Manage Subscriptions:</strong> Process and manage your subscription to remove ads</li>
+            <li><strong>Geofence Detection:</strong> Determine when you are on a supported route to activate location-based features</li>
+        </ol>
+
+        <h3>3.2 Secondary Uses</h3>
+
+        <p>We also use your information to:</p>
+        <ol>
+            <li><strong>Improve the App:</strong> Analyze usage patterns to identify features that need improvement</li>
+            <li><strong>Troubleshoot Issues:</strong> Diagnose and fix technical problems and bugs</li>
+            <li><strong>Prevent Fraud:</strong> Detect and prevent unauthorized access and fraudulent activities</li>
+            <li><strong>Comply with Laws:</strong> Fulfill legal obligations and respond to lawful requests from authorities</li>
+            <li><strong>Communicate Updates:</strong> Send you important information about App updates, changes to this Privacy Policy, or service announcements</li>
+            <li><strong>Traffic Analysis:</strong> Create traffic pattern reports and historical trend data</li>
+            <li><strong>Research:</strong> Conduct research to improve traffic prediction algorithms</li>
+        </ol>
+
+        <h3>3.3 Aggregated and Anonymized Data</h3>
+
+        <p>We may create aggregated, anonymized data from your information (e.g., "average device density at Tuas checkpoint at 8:00 AM on weekdays"). This aggregated data:</p>
+        <ul>
+            <li><strong>Cannot identify you</strong> individually</li>
+            <li>May be used for traffic pattern analysis</li>
+            <li>May be used for route optimization research</li>
+            <li>May be published in public traffic reports</li>
+            <li>May be used for academic research (with appropriate anonymization)</li>
+            <li>May be shared with traffic authorities for public benefit</li>
+        </ul>
+
+        <hr>
+
+        <h2>4. Data Sharing and Disclosure</h2>
+
+        <h3>4.1 Third-Party Service Providers</h3>
+
+        <p>We share your information with the following third parties to provide the App's services:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Service Provider</th>
+                    <th>Purpose</th>
+                    <th>Data Shared</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Maps Routes API</strong></td>
+                    <td>Real-time traffic duration and route information</td>
+                    <td>GPS coordinates, origin/destination points</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>LTA (Land Transport Authority)</strong></td>
+                    <td>Live traffic camera feeds</td>
+                    <td>Camera feed requests (no personal data)</td>
+                    <td><a href="https://www.lta.gov.sg" target="_blank">LTA Privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play Store</strong></td>
+                    <td>In-app purchase processing and subscription management</td>
+                    <td>Subscription status, payment confirmation</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">Google Play Privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Apple App Store</strong></td>
+                    <td>In-app purchase processing and subscription management</td>
+                    <td>Subscription status, payment confirmation</td>
+                    <td><a href="https://www.apple.com/privacy" target="_blank">Apple Privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Manus Cloud Infrastructure</strong></td>
+                    <td>App hosting, data storage, and backend services</td>
+                    <td>Aggregated traffic data, app usage analytics</td>
+                    <td><a href="https://manus.im/privacy" target="_blank">Manus Privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>4.2 Data We Do NOT Share</h3>
+
+        <p>We do <strong>NOT</strong> share the following information with third parties:</p>
+
+        <ul>
+            <li><span class="crossmark">✗</span> Your precise GPS location history</li>
+            <li><span class="crossmark">✗</span> Saved home and work locations</li>
+            <li><span class="crossmark">✗</span> Bluetooth device identifiers or personal information from nearby devices</li>
+            <li><span class="crossmark">✗</span> Your subscription payment details (handled directly by app stores)</li>
+            <li><span class="crossmark">✗</span> Your device identifiers or personal device information</li>
+            <li><span class="crossmark">✗</span> Your individual crowdsourced data points</li>
+            <li><span class="crossmark">✗</span> Your saved favorite routes or destinations</li>
+            <li><span class="crossmark">✗</span> Your user preferences and settings</li>
+        </ul>
+
+        <h3>4.3 Legal Requirements</h3>
+
+        <p>We may disclose your information when required by law or when we believe in good faith that disclosure is necessary to:</p>
+
+        <ul>
+            <li>Comply with applicable laws, regulations, or legal processes</li>
+            <li>Respond to lawful requests from government authorities or law enforcement</li>
+            <li>Enforce our Terms of Service</li>
+            <li>Protect the security or integrity of the App</li>
+            <li>Protect the rights, privacy, safety, or property of users or the public</li>
+            <li>Prevent or investigate possible wrongdoing</li>
+        </ul>
+
+        <p><strong>Notification:</strong> Where legally permitted, we will notify you of such requests before disclosure.</p>
+
+        <h3>4.4 Business Transfers</h3>
+
+        <p>If SG-MY Traffic is involved in a merger, acquisition, bankruptcy, dissolution, reorganization, or similar transaction or proceeding, your information may be transferred as part of that transaction. We will provide notice before your information becomes subject to a different privacy policy.</p>
+
+        <hr>
+
+        <h2>5. Data Storage and Security</h2>
+
+        <h3>5.1 Local Storage</h3>
+
+        <p>Most of your data is stored locally on your device, including:</p>
+
+        <ul>
+            <li>Saved locations and favorite routes</li>
+            <li>User preferences and settings</li>
+            <li>Bluetooth scanning status</li>
+            <li>Theme preferences</li>
+            <li>Refresh interval settings</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Security:</strong>
+            <ul>
+                <li>This data is encrypted using your device's built-in security features</li>
+                <li>Data is not transmitted to our servers unless explicitly required for specific features</li>
+                <li>Data persists until you delete the App or manually clear the data</li>
+            </ul>
+        </div>
+
+        <h3>5.2 Server Storage</h3>
+
+        <p>When you enable Bluetooth scanning, we collect and store aggregated device density data on our servers to provide crowd-sourced congestion estimates. This data includes:</p>
+
+        <ul>
+            <li>Number of nearby devices detected</li>
+            <li>Checkpoint location</li>
+            <li>Timestamp</li>
+            <li>Aggregated congestion level</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>Important:</strong>
+            <ul>
+                <li>This data is <strong>not linked to your personal identity</strong></li>
+                <li>This data <strong>cannot be used to identify you</strong></li>
+                <li>Individual data points are <strong>deleted after 24-48 hours</strong></li>
+                <li>Only aggregated statistics are retained for up to 90 days</li>
+            </ul>
+        </div>
+
+        <h3>5.3 Security Measures</h3>
+
+        <p>We implement industry-standard security measures to protect your information, including:</p>
+
+        <h4>Encryption in Transit</h4>
+        <ul>
+            <li>All data transmitted between your device and our servers uses <strong>HTTPS/TLS 1.2+</strong> encryption</li>
+            <li>Encryption prevents interception and eavesdropping</li>
+        </ul>
+
+        <h4>Encryption at Rest</h4>
+        <ul>
+            <li>Sensitive data stored on our servers is encrypted using <strong>AES-256 encryption</strong></li>
+            <li>Database access is restricted to authorized personnel only</li>
+            <li>Encryption keys are securely managed</li>
+        </ul>
+
+        <h4>Access Controls</h4>
+        <ul>
+            <li>Only authorized personnel have access to sensitive data</li>
+            <li>Role-based access control (RBAC) is implemented</li>
+            <li>Access logs are maintained and monitored</li>
+        </ul>
+
+        <h4>Regular Security Audits</h4>
+        <ul>
+            <li>We conduct regular security assessments</li>
+            <li>Penetration testing is performed quarterly</li>
+            <li>Vulnerability scanning is performed continuously</li>
+            <li>Security patches are applied promptly</li>
+        </ul>
+
+        <h4>Secure Authentication</h4>
+        <ul>
+            <li>Secure authentication mechanisms for API access</li>
+            <li>API keys are rotated regularly</li>
+            <li>Two-factor authentication is used for admin access</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>Important Disclaimer:</strong> While we implement robust security measures, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security of your information. Use of the App is at your own risk.
+        </div>
+
+        <h3>5.4 Data Retention</h3>
+
+        <p>We retain your information for as long as necessary to provide the App's services and comply with legal obligations:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Retention Period</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Local Device Data</td>
+                    <td>Until app deletion</td>
+                    <td>User functionality</td>
+                </tr>
+                <tr>
+                    <td>Server Aggregated Data</td>
+                    <td>90 days</td>
+                    <td>Traffic analysis</td>
+                </tr>
+                <tr>
+                    <td>Subscription Data</td>
+                    <td>Active + 1 year</td>
+                    <td>Billing records</td>
+                </tr>
+                <tr>
+                    <td>Usage Analytics</td>
+                    <td>12 months</td>
+                    <td>Usage trends</td>
+                </tr>
+                <tr>
+                    <td>Crash Logs</td>
+                    <td>30 days</td>
+                    <td>Bug fixing</td>
+                </tr>
+                <tr>
+                    <td>Device ID</td>
+                    <td>Until app uninstall</td>
+                    <td>App functionality</td>
+                </tr>
+                <tr>
+                    <td>Crowdsourced Data Points</td>
+                    <td>24-48 hours</td>
+                    <td>Real-time data only</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Deletion:</strong> You can request deletion of your data at any time by contacting us (see Section 10).</p>
+
+        <hr>
+
+        <h2>6. Your Privacy Rights and Choices</h2>
+
+        <h3>6.1 Access and Portability</h3>
+
+        <p>You have the right to access the personal information we hold about you. To request a copy of your data:</p>
+
+        <ol>
+            <li><strong>In-App:</strong> Settings → Privacy → Request Data Access</li>
+            <li><strong>Email:</strong> support@sgmytraffic.app</li>
+            <li><strong>Mailing Address:</strong> See Section 10</li>
+        </ol>
+
         <p><strong>Response Time:</strong></p>
         <ul>
             <li>Singapore PDPA: Within 14 days</li>
             <li>Malaysia PDPA: Within 30 days</li>
-            <li>General inquiries: Within 3-5 business days</li>
         </ul>
-    </div>
-    
-    <hr>
-    
-    <h2>8. Data Protection Authorities</h2>
-    
-    <p>If you have concerns about our data practices or believe we have violated your privacy rights:</p>
-    
-    <h3>Singapore:</h3>
-    <ul>
-        <li>Contact the Personal Data Protection Commission (PDPC)</li>
-        <li>Website: <a href="https://www.pdpc.gov.sg" target="_blank">www.pdpc.gov.sg</a></li>
-        <li>Email: <a href="mailto:enquiries@pdpc.gov.sg">enquiries@pdpc.gov.sg</a></li>
-    </ul>
-    
-    <h3>Malaysia:</h3>
-    <ul>
-        <li>Contact the Personal Data Protection Commissioner</li>
-        <li>Website: <a href="https://www.pdp.gov.my" target="_blank">www.pdp.gov.my</a></li>
-        <li>Email: <a href="mailto:enquiry@pdp.gov.my">enquiry@pdp.gov.my</a></li>
-    </ul>
-    
-    <hr>
-    
-    <div class="last-updated">
-        <p><strong>Version 1.0 | Last Updated: April 3, 2026</strong></p>
-        <p><strong>© 2026 SG-MY Traffic. All Rights Reserved.</strong></p>
+
+        <h3>6.2 Correction and Update</h3>
+
+        <p>If you believe any information we hold about you is inaccurate or incomplete, you can request correction by:</p>
+
+        <ol>
+            <li><strong>In-App:</strong> Settings → Privacy → Correct My Data</li>
+            <li><strong>Email:</strong> support@sgmytraffic.app</li>
+        </ol>
+
+        <p>We will correct inaccurate information within 14-30 days.</p>
+
+        <h3>6.3 Deletion</h3>
+
+        <p>You have the right to request deletion of your personal information. Upon receiving a valid deletion request, we will delete your data within 30 days, except where we are required to retain it by law.</p>
+
+        <p><strong>How to Request:</strong></p>
+        <ol>
+            <li><strong>In-App:</strong> Settings → Privacy → Request Data Deletion</li>
+            <li><strong>Email:</strong> support@sgmytraffic.app</li>
+        </ol>
+
+        <p><strong>What Gets Deleted:</strong></p>
+        <ul>
+            <li>Your device ID</li>
+            <li>All associated analytics</li>
+            <li>Any pending crowdsourced data</li>
+            <li>Crash logs</li>
+            <li>Subscription history</li>
+        </ul>
+
+        <p><strong>What Cannot Be Deleted:</strong></p>
+        <ul>
+            <li>Aggregated, anonymized statistics (cannot identify you)</li>
+            <li>Historical traffic patterns (no personal data)</li>
+            <li>Data required by law to retain</li>
+        </ul>
+
+        <h3>6.4 Opt-Out of Data Collection</h3>
+
+        <p>You can control data collection through the App settings:</p>
+
+        <p><strong>Disable Location Services:</strong></p>
+        <ul>
+            <li>Device Settings → Location → Turn off for SG-MY Traffic</li>
+            <li>Prevents GPS location collection</li>
+            <li>Disables geofence-based Bluetooth activation</li>
+        </ul>
+
+        <p><strong>Disable Bluetooth Scanning:</strong></p>
+        <ul>
+            <li>App Settings → Bluetooth → Toggle Off</li>
+            <li>Stops Bluetooth device detection</li>
+            <li>Stops sending device density data to servers</li>
+        </ul>
+
+        <p><strong>Opt-Out of Analytics:</strong></p>
+        <ul>
+            <li>App Settings → Privacy → Disable Analytics</li>
+            <li>Stops usage tracking</li>
+            <li>Stops crash reporting</li>
+        </ul>
+
+        <p><strong>Opt-Out of Crowdsourcing:</strong></p>
+        <ul>
+            <li>App Settings → Privacy → Disable Crowdsourcing</li>
+            <li>Stops sending aggregated data to servers</li>
+        </ul>
+
+        <h3>6.5 Do Not Track Signals</h3>
+
+        <p>Some browsers and devices include a "Do Not Track" feature. Our App does not currently respond to Do Not Track signals, but you can control data collection through the settings described above.</p>
+
+        <h3>6.6 Marketing Communications</h3>
+
+        <p>We do not send marketing emails or promotional communications. If we introduce this feature in the future, you will have the option to opt-out.</p>
+
+        <hr>
+
+        <h2>7. Children's Privacy</h2>
+
+        <p><strong>The App is not intended for children under the age of 13.</strong> We do not knowingly collect personal information from children under 13.</p>
+
+        <p>If we become aware that we have collected information from a child under 13, we will take steps to delete such information promptly and will not use it for any purpose.</p>
+
+        <p><strong>For Parents/Guardians:</strong> If you believe your child has provided information to us, please contact us immediately at support@sgmytraffic.app.</p>
+
+        <hr>
+
+        <h2>8. International Data Transfers</h2>
+
+        <p>The App operates in Singapore and Malaysia, and your information may be processed and stored in these countries. If you are accessing the App from another country, please be aware that your information may be transferred to, stored in, and processed in Singapore and Malaysia, which may have different data protection laws than your country of residence.</p>
+
+        <p><strong>By using the App, you consent to the transfer of your information to Singapore and Malaysia as described in this Privacy Policy.</strong></p>
+
+        <hr>
+
+        <h2>9. Third-Party Links and Services</h2>
+
+        <p>The App may contain links to third-party websites and services (such as Google Maps, LTA, and app stores) that are not operated by us. This Privacy Policy does not apply to third-party services, and we are not responsible for their privacy practices.</p>
+
+        <p>We encourage you to review the privacy policies of any third-party services before providing your information or using their services.</p>
+
+        <hr>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+
+        <p>We may update this Privacy Policy from time to time to reflect:</p>
+        <ul>
+            <li>Changes in our practices</li>
+            <li>Changes in technology</li>
+            <li>Legal or regulatory requirements</li>
+            <li>Other operational reasons</li>
+        </ul>
+
+        <p><strong>Notification of Changes:</strong></p>
+        <ul>
+            <li>We will update the "Last Updated" date at the top of this Privacy Policy</li>
+            <li>Significant changes will be notified via in-app notification</li>
+            <li>Your continued use of the App after any changes constitutes your acceptance of the updated Privacy Policy</li>
+        </ul>
+
+        <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
+
+        <hr>
+
+        <h2>11. Contact Us</h2>
+
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+        <div class="info-box">
+            <p><strong>Email:</strong> support@sgmytraffic.app</p>
+            <p><strong>Mailing Address:</strong><br>
+            SG-MY Traffic<br>
+            Singapore</p>
+            <p><strong>In-App Support:</strong><br>
+            Settings → Help & Support → Contact Us</p>
+            <p><strong>Response Time:</strong> We will respond to your inquiry within 30 days of receipt.</p>
+        </div>
+
+        <p><strong>For Regulatory Inquiries:</strong></p>
+
+        <h4>Singapore</h4>
+        <ul>
+            <li>Personal Data Protection Commission (PDPC)</li>
+            <li>Website: <a href="https://www.pdpc.gov.sg" target="_blank">www.pdpc.gov.sg</a></li>
+            <li>Email: <a href="mailto:enquiries@pdpc.gov.sg">enquiries@pdpc.gov.sg</a></li>
+        </ul>
+
+        <h4>Malaysia</h4>
+        <ul>
+            <li>Personal Data Protection Commissioner</li>
+            <li>Website: <a href="https://www.pdp.gov.my" target="_blank">www.pdp.gov.my</a></li>
+            <li>Email: <a href="mailto:enquiry@pdp.gov.my">enquiry@pdp.gov.my</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>12. Compliance Summary</h2>
+
+        <h3>Google Play Store Requirements <span class="checkmark">✓</span></h3>
+        <ul>
+            <li><span class="checkmark">✓</span> Clear disclosure of data collection</li>
+            <li><span class="checkmark">✓</span> Explanation of data use</li>
+            <li><span class="checkmark">✓</span> User controls and opt-outs</li>
+            <li><span class="checkmark">✓</span> Data security practices</li>
+            <li><span class="checkmark">✓</span> Third-party sharing disclosure</li>
+            <li><span class="checkmark">✓</span> Contact information</li>
+            <li><span class="checkmark">✓</span> Children's privacy protection</li>
+        </ul>
+
+        <h3>Singapore PDPA Requirements <span class="checkmark">✓</span></h3>
+        <ul>
+            <li><span class="checkmark">✓</span> Consent for data collection</li>
+            <li><span class="checkmark">✓</span> Purpose notification</li>
+            <li><span class="checkmark">✓</span> Right of access (within 14 days)</li>
+            <li><span class="checkmark">✓</span> Right of correction (within 14 days)</li>
+            <li><span class="checkmark">✓</span> Opt-out mechanisms</li>
+            <li><span class="checkmark">✓</span> Data security obligations</li>
+            <li><span class="checkmark">✓</span> Breach notification (within 7 days)</li>
+        </ul>
+
+        <h3>Malaysia PDPA Requirements <span class="checkmark">✓</span></h3>
+        <ul>
+            <li><span class="checkmark">✓</span> Consent for data collection</li>
+            <li><span class="checkmark">✓</span> Purpose limitation</li>
+            <li><span class="checkmark">✓</span> Right of access (within 30 days)</li>
+            <li><span class="checkmark">✓</span> Right of correction (within 30 days)</li>
+            <li><span class="checkmark">✓</span> Opt-out mechanisms</li>
+            <li><span class="checkmark">✓</span> Data security</li>
+            <li><span class="checkmark">✓</span> Breach notification (within 15 days)</li>
+        </ul>
+
+        <hr>
+
+        <h2>13. Glossary of Terms</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>RSSI</strong></td>
+                    <td>Received Signal Strength Indicator; a measurement of the power level of a Bluetooth signal</td>
+                </tr>
+                <tr>
+                    <td><strong>Geofence</strong></td>
+                    <td>A virtual boundary around a geographic location; in this App, geofences are set at 2km radius around Tuas and Woodlands checkpoints</td>
+                </tr>
+                <tr>
+                    <td><strong>Aggregated Data</strong></td>
+                    <td>Data combined from multiple sources that cannot identify individual users</td>
+                </tr>
+                <tr>
+                    <td><strong>Anonymized Data</strong></td>
+                    <td>Data that cannot identify an individual and cannot be reversed to identify them</td>
+                </tr>
+                <tr>
+                    <td><strong>AsyncStorage</strong></td>
+                    <td>Local encrypted storage on your device for app preferences and settings</td>
+                </tr>
+                <tr>
+                    <td><strong>Bluetooth Low Energy (BLE)</strong></td>
+                    <td>A wireless technology for short-range communication with minimal power consumption</td>
+                </tr>
+                <tr>
+                    <td><strong>API</strong></td>
+                    <td>Application Programming Interface; a set of protocols for software to communicate</td>
+                </tr>
+                <tr>
+                    <td><strong>LTA</strong></td>
+                    <td>Land Transport Authority of Singapore; provides traffic data and camera feeds</td>
+                </tr>
+                <tr>
+                    <td><strong>HTTPS/TLS</strong></td>
+                    <td>Secure communication protocol for encrypting data in transit</td>
+                </tr>
+                <tr>
+                    <td><strong>AES-256</strong></td>
+                    <td>Advanced Encryption Standard with 256-bit key; military-grade encryption</td>
+                </tr>
+                <tr>
+                    <td><strong>PDPA</strong></td>
+                    <td>Personal Data Protection Act; data protection legislation in Singapore and Malaysia</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>14. Acknowledgment</h2>
+
+        <p>By using SG-MY Traffic, you acknowledge that you have read this Privacy Policy and understand our data practices. If you do not agree with any part of this policy, please do not use our App.</p>
+
+        <hr>
+
+        <div class="footer">
+            <p><strong>Document Version:</strong> 2.0</p>
+            <p><strong>Author:</strong> Manus AI</p>
+            <p><strong>Last Review Date:</strong> April 19, 2026</p>
+            <p><strong>© 2026 SG-MY Traffic. All Rights Reserved.</strong></p>
+        </div>
     </div>
 </body>
 </html>
